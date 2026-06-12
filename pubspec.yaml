@@ -1,0 +1,37 @@
+name: set_control
+description: SET-STOP - Control de estado para sets de grabación cinematográfica y televisiva.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: 6.1.5+1
+  shared_preferences: 2.5.3
+  battery_plus: 6.0.2
+  connectivity_plus: 6.1.4
+  wakelock_plus: 1.2.8
+  vibration: 2.0.0
+  cupertino_icons: ^1.0.8
+  http: 1.5.0
+  mqtt_client: 10.5.0
+  crypto: 3.0.3
+  flutter_bluetooth_serial:
+    git:
+      url: https://github.com/bswhite1/flutter_bluetooth_serial.git
+      ref: android_12_updates
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/icon/
