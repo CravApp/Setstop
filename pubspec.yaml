@@ -19,10 +19,10 @@ dependencies:
   http: 1.5.0
   mqtt_client: 10.5.0
   crypto: 3.0.3
-  flutter_bluetooth_serial:
-    git:
-      url: https://github.com/bswhite1/flutter_bluetooth_serial.git
-      ref: android_12_updates
+  # BLE moderno — soporta ESP32 con perfil GATT
+  flutter_blue_plus: ^1.35.5
+  # Gestión de permisos en runtime (Android 12+ / iOS)
+  permission_handler: ^11.3.1
 
 dev_dependencies:
   flutter_test:

@@ -24,7 +24,9 @@ android {
         applicationId = "com.setcontrol.set_control"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // BLE requiere mínimo API 21; flutter_blue_plus lo exige.
+        // Para Bluetooth Clásico (fallback) también se soporta desde API 21.
+        minSdk = 21
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
